@@ -4,9 +4,11 @@ a design system created for use with react!
 
 # Features
 
-- auth context
-- api boilerplate
-- useful hooks
+- [ ] App wrapper insta-app™ component
+- [ ] Markdown viewifier!
+- [ ] auth context
+- [ ] api boilerplate
+- [ ] useful hooks
 
 # Usage
 

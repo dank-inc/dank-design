@@ -1,9 +1,12 @@
 {
-  "name": "dank-design",
-  "version": "0.1.0",
+  "name": "@dank-inc/dank-design",
+  "version": "0.2.0",
   "files": [
     "dist"
   ],
+  "repository": {
+    "url": "https://github.com/dank-inc/dank-design"
+  },
   "main": "dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
@@ -26,7 +29,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "lint": "tsc --noEmit",
-    "build:lib": "tsc",
+    "build:lib": "rm -rf dist && tsc -p tsconfig-lib.json",
     "build:storybook": "build-storybook -s public"
   },
   "eslintConfig": {
