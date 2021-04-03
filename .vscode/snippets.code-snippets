@@ -1,0 +1,49 @@
+{
+  "fc": {
+    "scope": "typescriptreact",
+    "prefix": "fc",
+    "body": [
+      "type Props = {$2}",
+      "export const ${1} = (props: Props) => { return <div>$3</div>}",
+      ""
+    ],
+    "description": "Scaffold for react function component w/ props"
+  },
+  "fc-layout": {
+    "scope": "typescriptreact",
+    "prefix": "fc-layout",
+    "body": [
+      "import { ReactNode } from 'react'",
+      "import './style.scss'",
+      "",
+      "type Props = {",
+      "  children: ReactNode",
+      "}",
+      "export const ${1} = ({children}: Props) => { return <div className=\"$2\">{children}</div>}",
+      ""
+    ],
+    "description": "Scaffold for react function component w/ children"
+  },
+  "fc-noprops": {
+    "scope": "typescriptreact",
+    "prefix": "fc-noprops",
+    "body": ["export const ${1} = () => { return $2}", ""],
+    "description": "Scaffold for react functional component w/ no props"
+  },
+  "fc-story": {
+    "scope": "typescriptreact",
+    "prefix": "fc-story",
+    "body": [
+      "import { Meta } from '@storybook/react'",
+      "",
+      "const meta: Meta = {",
+      "  title: '$1/$2',",
+      "}",
+      "",
+      "export const Default = () => $3",
+      "",
+      "export default meta"
+    ],
+    "description": "Scaffold for react functional component w/ no props"
+  }
+}
