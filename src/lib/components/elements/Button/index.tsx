@@ -3,7 +3,8 @@ import './style.scss'
 
 type Props = {
   children: ReactNode
+  kind?: 'primary' | 'link' | 'default'
 }
-export const Button = ({ children }: Props) => {
-  return <button>{children}</button>
+export const Button = ({ children, kind = 'default' }: Props) => {
+  return <button className={`dank-button ${kind}`}>{children}</button>
 }

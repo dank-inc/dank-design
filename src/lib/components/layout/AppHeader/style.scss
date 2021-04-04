@@ -1,5 +1,33 @@
 .dank-app-header {
-  padding: 0 1rem;
   display: flex;
+  flex-direction: row;
+
+  padding: 0 1rem;
   justify-content: space-between;
+
+  background: var(--dank-dark);
+
+  h1 {
+    color: var(--dank-white);
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+
+    &.left {
+      * {
+        margin-right: 1rem;
+      }
+    }
+    &.right {
+      * {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  * {
+    margin: auto 0;
+  }
 }

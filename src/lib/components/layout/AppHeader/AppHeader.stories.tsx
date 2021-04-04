@@ -1,5 +1,6 @@
 import { Meta } from '@storybook/react'
 import { AppHeader } from '.'
+import { Button } from '../../elements/Button'
 
 const meta: Meta = {
   title: 'Layout/AppHeader',
@@ -7,9 +8,13 @@ const meta: Meta = {
 
 export const Default = () => (
   <AppHeader>
-    <p>Header Left</p>
-    <p>Header Middle</p>
-    <p>Header Right</p>
+    <div className="left">
+      <h1>Header Left</h1>
+      <a href="?blah">Header Link</a>
+    </div>
+    <div className="right">
+      <Button>Header Right</Button>
+    </div>
   </AppHeader>
 )
 

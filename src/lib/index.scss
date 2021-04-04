@@ -1,7 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
+  padding: 0;
+  font-family: var(--dank-primary-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--dank-primary-color);
+  font-weight: bold;
+
+  &:hover {
+    filter: brightness(1.2);
+    text-shadow: 0 0 1px #fff4;
+  }
+}
+
+html {
+  height: 100vh;
 }
 
 code {
@@ -9,5 +44,16 @@ code {
 }
 
 :root {
-  // variables
+  --dank-primary-font: 'Noto Sans KR', sans-serif;
+  --dank-header-font: '';
+
+  --dank-dark: #556270;
+  --dank-white: #efefef;
+
+  --dank-primary-color: #4ecdc4;
+  --dank-secondary-color: #ff6b6b;
+  --dank-tertiary-color: #c7f464;
+  --dank-danger: #c44d58;
+
+  --dank-border-radius: 0.7rem;
 }

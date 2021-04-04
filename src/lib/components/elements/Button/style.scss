@@ -1,0 +1,41 @@
+.dank-button {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  box-shadow: 1px 1px 1px #0004;
+  transition: all 50ms ease-out;
+  border-radius: var(--dank-border-radius);
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    filter: brightness(1.1);
+    box-shadow: none;
+    top: 1px;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.link {
+    border: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  &.default {
+    background: var(--dank-white);
+  }
+
+  &.primary {
+    background: var(--dank-primary-color);
+    color: var(--dank-white);
+  }
+}
