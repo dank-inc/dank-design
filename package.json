@@ -8,6 +8,10 @@
     "url": "https://github.com/dank-inc/dank-design"
   },
   "main": "dist/index.js",
+  "peerDependencies": {
+    "node-sass": "^5.0.0",
+    "typescript": "^4.2.3"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
